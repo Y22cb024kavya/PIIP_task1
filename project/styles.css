@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  height: 100px;
+  width: 150px; /* Adjust size as needed */
+}
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  color: #0f0101;
+  font-weight: 200;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #81bff8;
+}
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #c2e9fb, #81bff8);
+  color: #fff;
+}
+
+.gallery, .reviews, .contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.image-pair {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-pair img {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.review {
+  margin: 1rem 0;
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 4px solid #81bff8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #81bff8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      background-image: url('your_image.jpg'); /* Replace with your background image */
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 70vh;
+      color: white;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6); /* dark overlay */
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      padding: 100px 40px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      color: #fdd835; /* yellow for location */
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      line-height: 1.5;
+    }
